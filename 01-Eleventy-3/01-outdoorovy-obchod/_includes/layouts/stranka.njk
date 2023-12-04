@@ -8,6 +8,20 @@ layout: layouts/hlavni-sablona.njk
 <!-- přidáme menu -->
 {% include 'partials/menu.njk' %}
 
+<!-- {% if title !== 'Blog' %}
+<div class="informace">
+	Z narizeni vlady je nase prodejna zavrena. V oteviracich hodinach slouzime pouze jako vydejna objendavek z e-shopu.
+</div>
+
+{% endif %} -->
+
+
+{% if page.fileSlug !== 'blog' %}
+	<div class="informace">
+		Z narizeni vlady je nase prodejna zavrena. V oteviracich hodinach slouzime pouze jako vydejna objendavek z e-shopu.
+	</div>
+{% endif %}
+
 
 <main class="main">
 
